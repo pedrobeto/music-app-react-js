@@ -21,6 +21,7 @@ body {
   background-color: #313131;
   padding: 50px;
   border-radius: 16px;
+  width: 600px;
   box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
 }
 

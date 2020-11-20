@@ -7,7 +7,7 @@ function App() {
       title: "Money Made Me Do It",
       artist: "Post Malone",
       img_src: "./images/song-1.jpg",
-      src: "./music/juice-wrld-conversations-official-audio.mp3"
+      src: "./music/money-made-me-do-it.mp3"
     },
     {
       title: "Franchise",
@@ -34,13 +34,13 @@ function App() {
 
   useEffect(() => {
     setNextSongIndex(() => {
-      if (currentSongIndex + 1 > songs.length -1) {
+      if ((currentSongIndex + 1) > (songs.length - 1)) {
         return 0;
       } else {
         return currentSongIndex + 1;
       }
     });
-  }, [currentSongIndex]);
+  }, [currentSongIndex, songs.length]);
 
   return (
     <div className="App">

@@ -11,7 +11,7 @@ function PlayerControls(props) {
             <button onClick={() => props.setIsPlaying(!props.isPlaying)}className="play-btn">
                 <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
             </button>
-            <button className="skip-btn" onClick={() => props.SkipSong(false)}>
+            <button className="skip-btn" onClick={() => props.SkipSong()}>
                 <FontAwesomeIcon icon={faForward} />
             </button>
         </div>
